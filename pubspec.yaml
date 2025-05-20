@@ -1,0 +1,63 @@
+name: le_on_the_checker
+description: A new Flutter game using Flame engine
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flame: ^1.12.0
+  shared_preferences: ^2.2.2
+  url_launcher: ^6.3.1
+  webview_flutter: ^4.12.0
+  flutter:
+    sdk: flutter
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/icon.png"
+  min_sdk_android: 21
+
+flutter_native_splash:
+  color: "#ffffff"  # цвет фона
+  image: assets/icon/splash2.png  # ваш логотип
+  android_gravity: center
+  ios_content_mode: center
+  # Дополнительные настройки размера:
+  image_size: 200  # размер в пикселях
+  branding: assets/icon/splash.png  # дополнительное изображение (опционально)
+
+dev_dependencies:
+  flutter_launcher_icons: "^0.14.3"
+  flutter_native_splash: ^2.4.6
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/icon/icon.png
+    - assets/icon/splash.png
+    - assets/icon/splash2.png
+    - assets/images/playButtonImage.png
+    - assets/images/startButtonImage.png
+    - assets/images/settingsButtonImage.png
+    - assets/images/shopButtonImage.png
+    - assets/images/privacyButtonImage.png
+    - assets/images/startBackgroundImage.png
+    - assets/images/gameBackgroundImage.png
+    - assets/images/labelBackgroundImage.png
+    - assets/images/player1.png
+    - assets/images/player2.png
+    - assets/images/player3.png
+    - assets/images/obstacle.png
+    - assets/images/arrow.png
+    - assets/images/shop_background.png
+    - assets/images/back_button.png
+    - assets/images/coin_bg.png
+    - assets/images/item_bg.png
+    - assets/images/buy_button.png
