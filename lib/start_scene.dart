@@ -6,13 +6,11 @@ import 'package:flame/components.dart';
 
 class StartScene extends FlameGame {
   final VoidCallback onNavigateToGame;
-  final VoidCallback onShowSettings;
   final VoidCallback onShowPrivacy;
   final VoidCallback onShowShop;
 
   StartScene({
     required this.onNavigateToGame,
-    required this.onShowSettings,
     required this.onShowPrivacy,
     required this.onShowShop,
   });
@@ -38,7 +36,6 @@ class StartScene extends FlameGame {
   Future<void> _setupButtons() async {
     final playSprite = await Sprite.load('playButtonImage.png');
     final startSprite = await Sprite.load('startButtonImage.png');
-    final settingsSprite = await Sprite.load('settingsButtonImage.png');
     final privacySprite = await Sprite.load('privacyButtonImage.png');
     final shopSprite = await Sprite.load('shopButtonImage.png');
 
@@ -56,30 +53,22 @@ class StartScene extends FlameGame {
       onPressed: onNavigateToGame,
     );
 
-    final settingsButton = SpriteButtonComponent(
-      button: settingsSprite,
-      position: Vector2(size.x / 2, size.y * 0.61),
-      anchor: Anchor.center,
-      onPressed: onShowSettings,
-    );
-
     final privacyButton = SpriteButtonComponent(
       button: privacySprite,
-      position: Vector2(size.x / 2, size.y * 0.87),
+      position: Vector2(size.x / 2, size.y * 0.77),
       anchor: Anchor.center,
       onPressed: onShowPrivacy,
     );
 
     final shopButton = SpriteButtonComponent(
       button: shopSprite,
-      position: Vector2(size.x / 2, size.y * 0.74),
+      position: Vector2(size.x / 2, size.y * 0.61),
       anchor: Anchor.center,
       onPressed: onShowShop,
     );
 
     add(playButton);
     add(startButton);
-    add(settingsButton);
     add(privacyButton);
     add(shopButton);
   }

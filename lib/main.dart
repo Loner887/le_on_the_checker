@@ -36,21 +36,6 @@ class GameWrapper extends StatelessWidget {
               MaterialPageRoute(builder: (_) => const GameScreen()),
             );
           },
-          onShowSettings: () {
-            showDialog(
-              context: context,
-              builder: (_) => AlertDialog(
-                title: const Text(''),
-                content: const Text(''),
-                actions: [
-                  TextButton(
-                    onPressed: () => Navigator.pop(context),
-                    child: const Text('OK'),
-                  ),
-                ],
-              ),
-            );
-          },
           onShowPrivacy: () async {
             final url = Uri.parse('https://doc-hosting.flycricket.io/le-on-the-checker-privacy-policy/3f36afac-e18d-4e84-9ffb-4d84fafd2982/privacy');
             try {

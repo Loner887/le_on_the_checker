@@ -45,7 +45,6 @@ flutter:
     - assets/icon/splash2.png
     - assets/images/playButtonImage.png
     - assets/images/startButtonImage.png
-    - assets/images/settingsButtonImage.png
     - assets/images/shopButtonImage.png
     - assets/images/privacyButtonImage.png
     - assets/images/startBackgroundImage.png
